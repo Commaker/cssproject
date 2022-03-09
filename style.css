@@ -1,79 +1,27 @@
-*,
-*::before,
-*::after {
+* {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
-ul,
-ol,
-li {
+
+ul {
   list-style: none;
 }
 img {
   vertical-align: top;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: inherit;
-  font-size: inherit;
-}
-html,
-body {
-  height: 100%;
-  line-height: 1;
-}
 
 body {
   font-size: 16px;
   color: #252b42;
-}
-/*
-.wrapper {
-  min-height: 100%;
-}
-
-.main {
-  flex: 1 1 auto;
-}
-
-.header-container {
-  margin: 0 auto;
-  color: green;
-  max-width: 1050px;
-}
-.header {
-}
-.header-container {
-  display: flex;
-}
-
-.header__logo {
-  display: flex;
-}
-.header__menu {
-  flex: 1 1 auto;
-}
-.menu,
-.header__logo {
-  display: flex;
-}
-.header__button {
-} 
-.header__button2 {
-}  */
-
-.font-Open {
   font-family: "Open Sans", serif;
 }
+
 .header {
   width: 100%;
   height: 823px;
@@ -132,6 +80,42 @@ body {
   align-items: center;
 }
 
+.buttons {
+  display: flex;
+  width: 93px;
+  align-items: center;
+}
+
+.button_get {
+  padding: 10px 36px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  width: 182px;
+  height: 48px;
+
+  background: #784f33;
+  border-radius: 37px;
+}
+
+.button_learn {
+  padding: 10px 36px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #784f33;
+  width: 152px;
+  height: 48px;
+
+  background: none;
+  border-radius: 37px;
+  border: 1px solid #784f33;
+}
+
+.button_learn_pos {
+  margin-left: 10px;
+}
 .button {
   height: 40px;
   width: 40px;
@@ -154,7 +138,7 @@ body {
   justify-content: space-between;
 }
 
-.main-container h1 p {
+.main-container h1 {
   width: 693px;
   height: 130px;
 
@@ -165,13 +149,11 @@ body {
   line-height: 65px;
 
   letter-spacing: 0.2px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+
   margin-top: 205px;
 }
 
-.main-container h2 p {
+.main-container h2 {
   width: 539px;
   height: 60px;
 
@@ -180,12 +162,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-
   letter-spacing: 0.5px;
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 35px 0px;
   color: #737373;
 }
@@ -197,26 +175,21 @@ body {
 .buttons-main__get {
   width: 182px;
   height: 48px;
-  left: 0px;
-  top: 0px;
+
   background: #784f33;
   border-radius: 37px;
 
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 28px;
   color: #ffffff;
 
-  text-align: center;
   letter-spacing: 0.2px;
 
   cursor: pointer;
 }
 .buttons-main__learn {
   position: static;
-  width: 182px;
+  width: 158px;
   height: 48px;
   left: 0px;
   top: 0px;
@@ -225,9 +198,6 @@ body {
   border: 1px solid #784f33;
   box-sizing: border-box;
 
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 28px;
   color: #784f33;
@@ -241,41 +211,30 @@ body {
 .buttons-main__learn__pos {
   margin-left: 10px;
 }
-.user-info {
+.book {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   width: 328px;
   height: 619px;
 
   border-radius: 10px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 50px;
 }
 
-.user-info h1 {
-  position: static;
+.title {
   width: 234px;
   height: 32px;
-  left: 47px;
-  top: 40px;
 
   font-family: Martel;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-
-  text-align: center;
-  letter-spacing: 0.1px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 40px 47px;
+  margin: 47px 40px;
 }
-.data input {
+.forms input {
   height: 50px;
   width: 245px;
   border: 1px solid #bdbdbd;
@@ -289,41 +248,27 @@ body {
   text-indent: 21px;
   font-family: "Monserrat";
 }
-.data p {
+.forms__titles {
   font-family: serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-
-  margin-top: 12px;
-  margin-bottom: 10px;
 }
 
-.user-info_container {
-  margin: 40px;
-}
-
-.user-info__button {
+.forms {
   display: flex;
+  width: 248px;
+  height: 369px;
   flex-direction: column;
-  align-items: center;
-  padding: 15px 40px;
+  align-items: stretch;
+}
 
-  position: static;
+.form__button {
+  margin: 15px 50px;
   width: 248px;
   height: 58px;
-  left: 40px;
-  top: 521px;
 
   background: #295c7a;
   border-radius: 5px;
-
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 40px 0px;
 
   color: #fff;
   font-family: "Open Sans";

@@ -29,43 +29,45 @@
                 <div><input class="button button-search" type="button" value=""></div>
                 <div><input class="button button-bag" type="button" value=""></div>
               </div>
+              
         </div>
         
        </nav>
        <div class="main-container">
            <div class="titles">
-             <h1><p>Help to reclaim your life and freedom</p></h1>
+             <h1>
+               <p>Help to reclaim your life and freedom</h1>
            
              <h2><p>We know how large objects will act, but things on a small scale.</p></h2>
            
            <div class="buttons-main">
-            <div><input class="buttons-main__get" type="button" value="Get Quote Now"></div>
-            <div class="buttons-main__learn__pos"><input class="buttons-main__learn" type="button" value="Learn more"></div>
+            <a href=""> <p class="button_get">Get Quote Now </p></a>
+            <div class="button_learn_pos"><a href=""> <p class="button_learn">Learn more</p></a></div>
            </div>
            </div>
-        <div class="user-info">
-          <div><h1>Book Appointment</h1></div>
-         <div class="user-info_container">
-            <div class="data">
-              <li class="data__item1"><p>Name*</p><input type="text" value="" placeholder="Full Name"></li>
-              <li class="data__item2"><p>Email*</p><input type="text" value="" placeholder="example@email.com" ></li>
-              <li class="data__item3"><p>Department*</p><input type="text" list="Department" value="" placeholder="Please Select"> </li>
-              <datalist id="Department">
-                <option value="New York">
-                <option value="Moscow">
-              </datalist>
-              <li class="data__item4"><p>Time*</p><input type="text" list="Time" value="" placeholder="4:00 Available"></li>
-              <datalist id="Time">
-                <option value="5:00 Not Available">
-                <option value="6:00 Available">
-              </datalist>
+        <div class="book">
+          <div class="title"><p>Book Appointment</p></div>
+            <div class="forms">
+              <ul>
+                <div><li class="forms__item"><p class="forms__titles Name">Name*</p><input type="text" value="" placeholder="Full Name"></li></div>
+                <div><li class="forms__item"><p class="forms__titles">Email*</p><input type="text" value="" placeholder="example@email.com" ></li></div>
+                <div><li class="forms__item" id="Department" ><p class="forms__titles">Department*</p><input type="text" list="Department" value="" placeholder="Please Select"> </li></div>
+                <datalist id="Department">
+                  <option value="New York">
+                  <option value="Moscow">
+                </datalist>
+                <div><li class="forms__item"><p class="forms__titles">Time*</p><input type="text" list="Time" value="" placeholder="4:00 Available"></li></di>
+                <datalist id="Time">
+                  <option value="5:00 Not Available">
+                  <option value="6:00 Available">
+                </datalist>
+              </ul>
             </div>
-            <div>
-              <input type="button" class="user-info__button" value="Book Appointment">
-            </div>
-         </div>
-         
+         <div>
+          <input type="button" class="form__button" value="Book Appointment">
         </div>
+        </div>
+       
        </div>
        
       </div>
