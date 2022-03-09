@@ -30,7 +30,7 @@ body {
 }
 
 .header-container {
-  width: 1046px;
+  width: 1050px;
   margin: 0 auto;
 }
 
@@ -41,9 +41,9 @@ body {
   padding-top: 13px;
   height: 104px;
 }
+
 .navbar__logo {
   font-family: Martel;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
@@ -52,14 +52,12 @@ body {
 }
 .menu-container {
   display: flex;
-  width: 373px;
   align-items: center;
 }
 .menu {
-  font-style: normal;
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  width: 300px;
 }
 
 .menu__item a {
@@ -74,16 +72,12 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
 }
-.buttons {
-  display: flex;
-  width: 93px;
-  align-items: center;
-}
 
 .buttons {
   display: flex;
   width: 93px;
   align-items: center;
+  margin-right: 25px;
 }
 
 .button_get {
@@ -105,25 +99,25 @@ body {
   font-size: 14px;
   line-height: 28px;
   color: #784f33;
-  width: 152px;
-  height: 48px;
 
   background: none;
   border-radius: 37px;
   border: 1px solid #784f33;
 }
 
-.button_learn_pos {
-  margin-left: 10px;
-}
 .button {
   height: 40px;
   width: 40px;
   cursor: pointer;
 }
-
+.button_stairs {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2.38%;
+}
 .button-search {
-  margin-left: 25px;
+  margin-left: 23px;
   background: url(img/loupe.svg) no-repeat center center;
 }
 
@@ -150,7 +144,7 @@ body {
 
   letter-spacing: 0.2px;
 
-  margin-top: 205px;
+  margin-top: 210px;
 }
 
 .main-container h2 {
@@ -170,6 +164,8 @@ body {
 
 .buttons-main {
   display: flex;
+  justify-content: space-between;
+  width: 347px;
 }
 
 .buttons-main__get {
@@ -212,10 +208,8 @@ body {
   margin-left: 10px;
 }
 .book {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 55px;
+
   background-color: #fff;
   width: 328px;
   height: 619px;
@@ -232,9 +226,9 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
-  margin: 47px 40px;
+  margin: 40px 45px;
 }
-.forms input {
+.forms input[type="text"] {
   height: 50px;
   width: 245px;
   border: 1px solid #bdbdbd;
@@ -249,30 +243,44 @@ body {
   font-family: "Monserrat";
 }
 .forms__titles {
+  margin: 10px 0px;
+  font-weight: bold;
   font-family: serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 
 .forms {
-  display: flex;
+  margin: 0 auto;
   width: 248px;
   height: 369px;
-  flex-direction: column;
-  align-items: stretch;
 }
 
 .form__button {
-  margin: 15px 50px;
+  margin-top: 40px;
   width: 248px;
   height: 58px;
 
   background: #295c7a;
   border-radius: 5px;
 
+  text-align: center;
   color: #fff;
   font-family: "Open Sans";
   font-weight: bold;
 
+  cursor: pointer;
+}
+.forms__item_vector {
+  position: relative;
+}
+.forms__item_vector::after {
+  position: absolute;
+  background: url(/img/Vector\ .svg);
+  content: "";
+  width: 14px;
+  height: 8px;
+  right: 21px;
+  bottom: 23px;
   cursor: pointer;
 }
