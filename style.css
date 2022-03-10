@@ -11,6 +11,8 @@ a {
 
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 img {
   vertical-align: top;
@@ -237,8 +239,8 @@ body {
 }
 
 .forms input::placeholder {
-  font-family: Monserrat;
-  font-weight: 400px;
+  font-family: "Montserrat";
+  font-weight: 500;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.2px;
@@ -316,7 +318,7 @@ body {
 }
 .advice-container {
   width: 100%;
-  margin: 80px 2px;
+  margin: 80px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -342,11 +344,10 @@ body {
 
 .advice-content {
   display: flex;
-  min-width: 328px;
-  min-height: 253px;
+  width: 328px;
+  height: 253px;
   justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+
   background: #ffffff;
   border: 1px solid #a9d6ff;
   box-sizing: border-box;
@@ -356,13 +357,26 @@ body {
 .advice-list {
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
+  padding: 30px 50px;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
 
   color: #737373;
 
   letter-spacing: 0.2px;
+}
+
+.advice-list_element {
+  padding-bottom: 5px;
+  line-height: 24px;
+}
+.learn {
+  font-weight: 600;
+  color: #d0a144;
+  cursor: pointer;
+}
+.last {
+  margin-right: 6px;
 }
