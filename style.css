@@ -24,12 +24,12 @@ body {
 
 .header {
   width: 100%;
-  height: 823px;
-  background: url(/img/cover.png) no-repeat;
+
+  background: url(/img/cover_background.png) no-repeat;
   background-size: cover;
 }
 
-.header-container {
+.container {
   width: 1050px;
   margin: 0 auto;
 }
@@ -118,11 +118,11 @@ body {
 }
 .button-search {
   margin-left: 23px;
-  background: url(img/loupe.svg) no-repeat center center;
+  background: url(img/loupe_icon.svg) no-repeat center center;
 }
 
 .button-bag {
-  background: url(/img/bag.svg) no-repeat center center;
+  background: url(/img/bag_icon.svg) no-repeat center center;
 }
 
 .main-container {
@@ -153,10 +153,10 @@ body {
 
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 
   margin: 35px 0px;
   color: #737373;
@@ -184,7 +184,6 @@ body {
   cursor: pointer;
 }
 .buttons-main__learn {
-  position: static;
   width: 158px;
   height: 48px;
   left: 0px;
@@ -204,11 +203,9 @@ body {
   cursor: pointer;
 }
 
-.buttons-main__learn__pos {
-  margin-left: 10px;
-}
 .book {
   margin-top: 55px;
+  margin-bottom: 50px;
 
   background-color: #fff;
   width: 328px;
@@ -236,16 +233,20 @@ body {
   border-radius: 5px;
   background: #f9f9f9;
 
+  text-indent: 21px;
+}
+
+.forms input::placeholder {
+  font-family: Monserrat;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 28px;
-
-  text-indent: 21px;
-  font-family: "Monserrat";
+  letter-spacing: 0.2px;
 }
 .forms__titles {
   margin: 10px 0px;
   font-weight: bold;
-  font-family: serif;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 24px;
 }
@@ -276,11 +277,92 @@ body {
 }
 .forms__item_vector::after {
   position: absolute;
-  background: url(/img/Vector\ .svg);
+  background: url(/img/vector_icon.svg) no-repeat;
   content: "";
   width: 14px;
   height: 8px;
   right: 21px;
   bottom: 23px;
   cursor: pointer;
+}
+.title-container {
+  margin: 80px 93px;
+  display: flex;
+  width: 864px;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+.advice-title {
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+}
+.subtitle-container {
+  margin-top: 10px;
+  width: 431px;
+  height: 40px;
+}
+.advice-subtitle {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #737373;
+  letter-spacing: 0.2px;
+}
+.advice-container {
+  width: 100%;
+  margin: 80px 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.advice-block {
+  width: 328px;
+  height: 385px;
+  background: #f6e4d7;
+  border-radius: 10px;
+}
+.advice-head {
+  font-family: Martel;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 328px;
+  height: 132px;
+  border-radius: 10px;
+}
+.advice-head img {
+  padding-right: 15px;
+}
+
+.advice-content {
+  display: flex;
+  min-width: 328px;
+  min-height: 253px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #a9d6ff;
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+
+.advice-list {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #737373;
+
+  letter-spacing: 0.2px;
 }
