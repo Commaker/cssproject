@@ -27,13 +27,29 @@ body {
 .header {
   width: 100%;
 
-  background: url(/img/cover_background.png) no-repeat;
+  background: url(./img/cover_background.png) no-repeat;
   background-size: cover;
 }
 
 .container {
   width: 1050px;
   margin: 0 auto;
+}
+.main-title {
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+}
+.main-subtitle {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #737373;
+  letter-spacing: 0.2px;
 }
 
 .navbar {
@@ -101,7 +117,6 @@ body {
   font-size: 14px;
   line-height: 28px;
   color: #784f33;
-
   background: none;
   border-radius: 37px;
   border: 1px solid #784f33;
@@ -120,11 +135,11 @@ body {
 }
 .button-search {
   margin-left: 23px;
-  background: url(img/loupe_icon.svg) no-repeat center center;
+  background: url(./img/loupe_icon.svg) no-repeat center center;
 }
 
 .button-bag {
-  background: url(/img/bag_icon.svg) no-repeat center center;
+  background: url(./img/bag_icon.svg) no-repeat center center;
 }
 
 .main-container {
@@ -137,29 +152,24 @@ body {
 .main-container h1 {
   width: 693px;
   height: 130px;
-
   font-family: "Martel";
   font-style: normal;
   font-weight: 900;
   font-size: 58px;
   line-height: 65px;
-
   letter-spacing: 0.2px;
-
   margin-top: 210px;
 }
 
 .main-container h2 {
   width: 539px;
   height: 60px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.2px;
-
   margin: 35px 0px;
   color: #737373;
 }
@@ -173,16 +183,12 @@ body {
 .buttons-main__get {
   width: 182px;
   height: 48px;
-
   background: #784f33;
   border-radius: 37px;
-
   font-size: 14px;
   line-height: 28px;
   color: #ffffff;
-
   letter-spacing: 0.2px;
-
   cursor: pointer;
 }
 .buttons-main__learn {
@@ -194,32 +200,26 @@ body {
   border-radius: 37px;
   border: 1px solid #784f33;
   box-sizing: border-box;
-
   font-size: 14px;
   line-height: 28px;
   color: #784f33;
-
   text-align: center;
   letter-spacing: 0.2px;
-
   cursor: pointer;
 }
 
 .book {
   margin-top: 55px;
   margin-bottom: 50px;
-
   background-color: #fff;
   width: 328px;
   height: 619px;
-
   border-radius: 10px;
 }
 
 .title {
   width: 234px;
   height: 32px;
-
   font-family: Martel;
   font-style: normal;
   font-weight: bold;
@@ -279,7 +279,7 @@ body {
 }
 .forms__item_vector::after {
   position: absolute;
-  background: url(/img/vector_icon.svg) no-repeat;
+  background: url(./img/vector_icon.svg) no-repeat;
   content: "";
   width: 14px;
   height: 8px;
@@ -295,32 +295,19 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.advice-title {
-  font-family: Martel;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.2px;
-}
+
 .subtitle-container {
   margin-top: 10px;
   width: 431px;
   height: 40px;
 }
-.advice-subtitle {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #737373;
-  letter-spacing: 0.2px;
-}
+
 .advice-container {
   width: 100%;
-  margin: 80px 0px;
+  margin: 0px 0px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 .advice-block {
   width: 328px;
@@ -329,6 +316,7 @@ body {
   border-radius: 10px;
 }
 .advice-head {
+  letter-spacing: 0.1px;
   font-family: Martel;
   font-weight: 700;
   display: flex;
@@ -367,16 +355,37 @@ body {
 
   letter-spacing: 0.2px;
 }
+.advice-list_element::before {
+  content: "-";
+}
 
 .advice-list_element {
   padding-bottom: 5px;
   line-height: 24px;
 }
-.learn {
+.advice-list_element_learn {
   font-weight: 600;
   color: #d0a144;
   cursor: pointer;
 }
 .last {
-  margin-right: 6px;
+  margin-right: 5px;
+}
+
+.block-video {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-block {
+  margin: 0 auto;
+  width: 1440px;
+  height: 350px;
+  background: rgb(19, 47, 63);
+}
+.main-video {
+  margin: 0 auto;
+  width: 877px;
+  height: 400px;
 }
