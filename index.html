@@ -80,18 +80,18 @@
                 <div>
                   <li class="forms__item">
                     <p class="forms__titles Name">Name*</p>
-                    <input type="text" value="" placeholder="Full Name">
+                    <input class="input-form" type="text" value="" placeholder="Full Name">
                   </li>
                 </div>
                 <div>
                   <li class="forms__item">
                     <p class="forms__titles">Email*</p>
-                    <input type="text" value="" placeholder="example@email.com">
+                    <input class="input-form" type="text" value="" placeholder="example@email.com">
                   </li>
                 </div>
                 <div>
                   <li class="forms__item_vector">
-                    <p class="forms__titles">Department*</p><input class="department" type="text" list="Department"
+                    <p class="forms__titles">Department*</p><input class="input-form" type="text" list="Department"
                       value="" placeholder="Please Select">
                   </li>
                 </div>
@@ -101,7 +101,7 @@
                 </datalist>
                 <div>
                   <li class="forms__item_vector">
-                    <p class="forms__titles">Time*</p><input type="text" list="Time" value=""
+                    <p class="forms__titles">Time*</p><input class="input-form" type="text" list="Time" value=""
                       placeholder="4:00 Available">
                   </li>
                   </di>
@@ -401,10 +401,70 @@
         </div>
       </div>
       <div class="contact-block">
-        <div class="container">
+        <div class="contact-block_background">
 
+          <div class="container contact-block-container">
+            <div class="contact-form-container">
+              <div class="contact-form-container_inner">
+                <div class="contact-titles">
+                  <div class="title-contact-us">
+                    Contact Us
+                  </div>
+                  <div class="title-make-appointment">
+                    Make an Appointment
+                  </div>
+                </div>
+                <div class="contact-form">
+                  <ul>
+                    <div class="contact-form-items-container">
+                      <div class="contact-form_rows">
+                        <div>
+                          <li class="forms__item contact-form_item">
+                            <input class="input-form contact-form-small" type="text" value="" placeholder="Full Name">
+                          </li>
+                        </div>
+                        <div>
+                          <li class="forms__item">
+                            <input class="input-form contact-form-big" type="text" value=""
+                              placeholder="example@email.com">
+                          </li>
+                        </div>
+                      </div>
+                      <div class="contact-form_rows">
+                        <div>
+                          <li class="forms__item_vector">
+                            <input class="input-form contact-form-small" type="text" list="Department" value=""
+                              placeholder="Please Select">
+                          </li>
+                        </div>
+                        <datalist id="Department">
+                          <option value="New York">
+                          <option value="Moscow">
+                        </datalist>
+                        <div>
+                          <li class="forms__item_vector">
+                            </p><input class="input-form contact-form-big" type="text" list="Time" value=""
+                              placeholder="4:00 Available">
+                          </li>
+                          </di>
+                          <datalist id="Time">
+                            <option value="5:00 Not Available">
+                            <option value="6:00 Available">
+                          </datalist>
+                        </div>
+                      </div>
+                      <div>
+                        <li>
+                          <input class="input-form contact-message" type="text" placeholder="Message">
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </main>
 
     <footer class="footer">

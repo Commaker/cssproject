@@ -247,7 +247,7 @@ body {
   margin: 40px 45px;
 }
 
-.forms input[type="text"] {
+.input-form {
   height: 50px;
   width: 245px;
   border: 1px solid #bdbdbd;
@@ -417,12 +417,6 @@ body {
   position: absolute;
 }
 
-.video-container::after {
-  display: block;
-  content: "";
-  background: red;
-}
-
 .clients-review-block {
   background-color: #f3f3f3;
   display: flex;
@@ -541,8 +535,95 @@ body {
   align-items: center;
   justify-items: center;
 }
+
 .contact-block {
   width: 100%;
+  background: rgb(243, 243, 243);
+  background-size: cover;
+}
+
+.contact-block_background {
+  margin: 0 auto;
+  width: 1440px;
+  height: 821px;
   background: url(./img/contacts_background.png) no-repeat;
   background-size: cover;
+}
+
+.contact-form-container {
+  display: flex;
+  width: 1050px;
+  height: 672px;
+}
+
+.contact-form-container_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 602px;
+  height: 572px;
+}
+
+.contact-titles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.title-contact-us {
+  display: flex;
+  text-align: left;
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.title-make-appointment {
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.contact-form_rows {
+  width: 597px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form-small {
+  width: 285px;
+}
+
+.contact-form-big {
+  width: 290px;
+}
+
+.contact-message {
+  width: 598px;
+  height: 140px;
+}
+
+.contact-message ::placeholder {
+  display: block;
+  text-align: start;
+}
+
+.contact-form-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 602px;
+  height: 280px;
+  justify-content: space-between;
 }
