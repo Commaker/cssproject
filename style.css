@@ -394,6 +394,14 @@ body {
 .video-title-container {
   margin-bottom: 50px;
 }
+.video-block::after {
+  margin-top: -351px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 350px;
+  background: rgb(19, 47, 63);
+}
 
 .bottom-block {
   margin: 0 auto;
