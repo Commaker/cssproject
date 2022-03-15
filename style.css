@@ -256,7 +256,7 @@ body {
   text-indent: 21px;
 }
 
-.forms input::placeholder {
+.input-form::placeholder {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 14px;
@@ -827,4 +827,13 @@ body {
   font-weight: 700;
   padding: 25px 0px;
   color: #fff;
+}
+.input-form-light::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #bdbdbd;
 }
