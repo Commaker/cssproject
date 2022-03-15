@@ -16,6 +16,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Martel:200,300,regular,600,700,800,900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,7 @@
         <nav class="navbar">
           <a href="" class="navbar__logo">Litigade</a>
           <div class="menu-container">
-            <ul class="menu">
+            <ul class="menu flex-between-center">
               <div>
                 <li class="menu__item"><a href="">Home</a></li>
               </div>
@@ -239,10 +240,12 @@
             </div>
           </div>
           <div class="video-container">
-            <img class="button-video" src="./img/button-video_icon.svg" alt="">
-            <video width="877" height="440" poster="./img/video_background.png" src="./video/sample-10s.mp4"
-              frameborder="0">
-            </video>
+            <div class="video-container_main">
+              <img class="button-video" src="./img/button-video_icon.svg" alt="">
+              <video id="player" controls width="877" height="440" data-poster="./img/video_background.png"
+                src="./video/sample-10s.mp4" frameborder="0">
+              </video>
+            </div>
           </div>
         </div>
       </div>
@@ -357,9 +360,12 @@
                   <div class="attorneys-card-info_name card_1">Ashley Fletcher</div>
                   <div class="attorneys-card-info_post card_1">LAYER & CEO</div>
                   <div class="attorneys-card-info_media">
-                    <div class="attorneys-card-info_media_facebook "> <img src="./img/facebook_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_instagram"><img src="./img/instagram_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_twitter"> <img src="./img/twitter_icon.svg" alt=""></div>
+                    <div class="attorneys-card-info_media_facebook"> <a target="_blank"
+                        href="https://www.facebook.com/"><img src="./img/facebook_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_instagram"><a target="_blank"
+                        href="https://www.instagram.com/"><img src="./img/instagram_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_twitter"> <a target="_blank"
+                        href="https://www.twitter.com/"><img src="./img/twitter_icon.svg" alt=""></a></div>
                   </div>
                 </div>
               </div>
@@ -373,9 +379,12 @@
                   <div class="attorneys-card-info_name card_2">Rodney Stratton</div>
                   <div class="attorneys-card-info_post card_2">CEO</div>
                   <div class="attorneys-card-info_media">
-                    <div class="attorneys-card-info_media_facebook "> <img src="./img/facebook_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_instagram"><img src="./img/instagram_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_twitter"> <img src="./img/twitter_icon.svg" alt=""></div>
+                    <div class="attorneys-card-info_media_facebook"> <a target="_blank"
+                        href="https://www.facebook.com/"><img src="./img/facebook_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_instagram"><a target="_blank"
+                        href="https://www.instagram.com/"><img src="./img/instagram_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_twitter"> <a target="_blank"
+                        href="https://www.twitter.com/"><img src="./img/twitter_icon.svg" alt=""></a></div>
                   </div>
                 </div>
               </div>
@@ -389,9 +398,12 @@
                   <div class="attorneys-card-info_name card_3">Avie Beaton</div>
                   <div class="attorneys-card-info_post card_3">LAYER CIVIL LAW</div>
                   <div class="attorneys-card-info_media">
-                    <div class="attorneys-card-info_media_facebook"> <img src="./img/facebook_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_instagram"><img src="./img/instagram_icon.svg" alt=""></div>
-                    <div class="attorneys-card-info_media_twitter"> <img src="./img/twitter_icon.svg" alt=""></div>
+                    <div class="attorneys-card-info_media_facebook"> <a target="_blank"
+                        href="https://www.facebook.com/"><img src="./img/facebook_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_instagram"><a target="_blank"
+                        href="https://www.instagram.com/"><img src="./img/instagram_icon.svg" alt=""></a></div>
+                    <div class="attorneys-card-info_media_twitter"> <a target="_blank"
+                        href="https://www.twitter.com/"><img src="./img/twitter_icon.svg" alt=""></a></div>
                   </div>
                 </div>
               </div>
@@ -455,12 +467,34 @@
                       </div>
                       <div>
                         <li>
-                          <input class="input-form contact-message" type="text" placeholder="Message">
+                          <textarea placeholder="Message" class="input-form textarea" name="" id="" cols="30"
+                            rows="10"></textarea>
                         </li>
                       </div>
                     </div>
+                    <div>
+                      <li>
+                        <input type="button" class="form__button contact-button" value="Book Appointment">
+
+                      </li>
+                    </div>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-consultation">
+            <div class="request-container">
+              <div class="request-titles-container">
+                <div class="main-title request-title">
+                  Request A Free Consultation
+                </div>
+                <div class="main-text request-subtitle">
+                  the quick fox jumps over the lazy dog
+                </div>
+              </div>
+              <div class="button-container-contact">
+                <input type="button" class="form__button contact-button contact-us" value="Contact Us">
               </div>
             </div>
           </div>
@@ -468,10 +502,93 @@
     </main>
 
     <footer class="footer">
-      footer
+      <div class="container">
+        <div class="footer-header-container">
+          <div class="footer-header">
+            <div class="navbar__logo footbar-logo">Litigade</div>
+            <div class="social-media-container">
+              <div class="attorneys-card-info_media social-media__inner">
+                <div class="attorneys-card-info_media_facebook"> <a target="_blank"
+                    href="https://www.facebook.com/"><img src="./img/facebook_colorful_icon.svg" alt=""></a></div>
+                <div class="attorneys-card-info_media_instagram"><a target="_blank"
+                    href="https://www.instagram.com/"><img src="./img/instagram_colorful_icon.svg" alt=""></a></div>
+                <div class="attorneys-card-info_media_twitter"> <a target="_blank" href="https://www.twitter.com/"><img
+                      src="./img/twitter_colorful_icon.svg" alt=""></a></div>
+                <div class="attorneys-card-info_media_youtube"> <a target="_blank" href="https://www.youtube.com/"><img
+                      src="./img/youtube_icon.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts-container">
+          <div class="footer-contacts-container_inner">
+            <div class="contact-block-footer">
+              <div class="advice-head contact-block-title">Company Info</div>
+              <div class="contact-block-info-container">
+                <div class="main-text contact-block-info">About Us</div>
+                <div class="main-text contact-block-info">Carrier</div>
+                <div class="main-text contact-block-info">We are hiring</div>
+                <div class="main-text contact-block-info">Blog</div>
+              </div>
+            </div>
+            <div class="contact-block-footer">
+              <div class="advice-head contact-block-title">Legal</div>
+              <div class="contact-block-info-container">
+                <div class="main-text contact-block-info">About Us</div>
+                <div class="main-text contact-block-info">Carrier</div>
+                <div class="main-text contact-block-info">We are hiring</div>
+                <div class="main-text contact-block-info">Blog</div>
+              </div>
+            </div>
+            <div class="contact-block-footer">
+              <div class="advice-head contact-block-title">Features</div>
+              <div class="contact-block-info-container">
+                <div class="main-text contact-block-info">Business Marketing</div>
+                <div class="main-text contact-block-info">User Analytic</div>
+                <div class="main-text contact-block-info">We are hiring</div>
+                <div class="main-text contact-block-info">Blog</div>
+              </div>
+            </div>
+            <div class="contact-block-footer">
+              <div class="advice-head contact-block-title">Resources</div>
+              <div class="contact-block-info-container">
+                <div class="main-text contact-block-info">IOS & Android</div>
+                <div class="main-text contact-block-info">Watch a Demo</div>
+                <div class="main-text contact-block-info">Customers</div>
+                <div class="main-text contact-block-info">API</div>
+              </div>
+            </div>
+            <div class="contact-block-footer get-in-touch">
+              <div class="advice-head contact-block-title">Get In Touch</div>
+              <div class="button-subscribe">
+                <div>
+                  <li class="forms__item_vector input-button">
+                    <input class="input-form contact-form-small your-email" type="text" value=""
+                      placeholder="Your Email">
+                    <input type="button" class="form__button contact-button contact-us input-button-main"
+                      value="Subscribe">
+                    <p class="main-text p-contact">Lorem impsum dolor amit</p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rights-block">
+        <div class="container">
+          <div class="main-text rights-text">
+            Made With Love By Figmaland All Right Reserved
+          </div>
+        </div>
 
+      </div>
     </footer>
   </div>
+  <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
 </body>
 
 </html>

@@ -65,7 +65,6 @@ body {
 .font-orange {
   font-weight: 600;
   color: #d0a144;
-  cursor: pointer;
 }
 
 .navbar {
@@ -259,7 +258,7 @@ body {
 
 .forms input::placeholder {
   font-family: "Montserrat";
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.2px;
@@ -403,7 +402,7 @@ body {
   background: rgb(19, 47, 63);
 }
 
-.video-container {
+.video-container_main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,7 +413,9 @@ body {
 }
 
 .button-video {
+  display: block;
   position: absolute;
+  z-index: 0;
 }
 
 .clients-review-block {
@@ -553,7 +554,7 @@ body {
 .contact-form-container {
   display: flex;
   width: 1050px;
-  height: 672px;
+  height: 679px;
 }
 
 .contact-form-container_inner {
@@ -611,12 +612,15 @@ body {
 }
 
 .contact-message {
+  display: flex;
   width: 598px;
   height: 140px;
 }
 
-.contact-message ::placeholder {
-  display: block;
+.contact-message::placeholder {
+  flex-wrap: wrap;
+  width: 598px;
+  height: 140px;
   text-align: start;
 }
 
@@ -626,4 +630,201 @@ body {
   width: 602px;
   height: 280px;
   justify-content: space-between;
+}
+.textarea {
+  padding-top: 20px;
+  padding-left: 5px;
+  width: 595px;
+  height: 140px;
+}
+:root {
+  --plyr-color-main: #072e44;
+}
+
+.video-container_main .plyr__control--overlaid svg {
+  display: none;
+}
+
+.video-container .video-container_main .plyr__control--overlaid {
+  width: 100px;
+  height: 100px;
+  background: url(./img/button-video_icon_arrow.svg);
+}
+
+.video-container .video-container_main .plyr__control--overlaid:hover {
+  background: url(./img/button-video_icon_arrow.svg);
+}
+
+.contact-button {
+  background: #784f33;
+  width: 215px;
+  margin-bottom: 2px;
+}
+
+.contact-consultation {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 1440px;
+  background: #fff;
+  height: 143px;
+}
+.request-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1052px;
+  height: 62px;
+}
+
+.request-titles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.request-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.request-subtitle {
+  font-weight: 400;
+}
+
+.button-container-contact {
+  display: flex;
+  width: 236px;
+  height: 58px;
+  justify-content: center;
+}
+
+.contact-us {
+  width: 158px;
+  height: 58px;
+  margin-top: 0;
+}
+.footer {
+  background: #252b42;
+}
+
+.footer-header-container {
+  display: flex;
+  align-items: center;
+  width: 1050px;
+  height: 138px;
+  border-bottom: 1px solid #364067;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1049px;
+  height: 58px;
+}
+
+.footbar-logo {
+  color: #fff;
+  width: 100px;
+  height: 32px;
+  display: flex;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  width: 236px;
+  height: 24px;
+}
+
+.social-media__inner {
+  width: 156px;
+  height: 24px;
+}
+
+.footer-contacts-container {
+  display: flex;
+  align-items: center;
+  width: 1050px;
+  height: 310px;
+}
+
+.footer-contacts-container_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1041px;
+  height: 170px;
+}
+
+.contact-block-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 148px;
+  height: 170px;
+}
+
+.get-in-touch {
+  display: flex;
+  width: 321px;
+  height: 131px;
+}
+
+.contact-block-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 126px;
+}
+
+.contact-block-info {
+  font-weight: 600;
+}
+
+.contact-block-title {
+  align-items: left;
+  justify-content: left;
+  color: #fff;
+  width: 117px;
+  height: 24px;
+}
+
+.p-contact {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.your-email {
+  width: 100%;
+  height: 58px;
+}
+
+.input-button::after {
+  display: none;
+}
+
+.input-button-main {
+  position: absolute;
+  width: 117px;
+  height: 57px;
+  right: 0px;
+  bottom: 23px;
+
+  background: #d0a144;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.rights-block {
+  height: 74px;
+  width: 100%;
+  background: linear-gradient(270deg, #295c7a -1.04%, #0072b5 100%);
+}
+
+.rights-text {
+  font-weight: 700;
+  padding: 25px 0px;
+  color: #fff;
 }
