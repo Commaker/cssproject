@@ -16,6 +16,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Martel:200,300,regular,600,700,800,900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,20 +32,14 @@
         <nav class="navbar">
           <a href="" class="navbar__logo">Litigade</a>
           <div class="menu-container">
-            <ul class="menu flex-between-center">
-              <div>
-                <li class="menu__item"><a href="">Home</a></li>
+            <div class="menu menu_header">
+              <div class="menu_header_titles">
+                <div class="menu__item"><a href="">Home</a></div>
+                <div class="menu__item"><a href="">Product</a></div>
+                <div class="menu__item"><a href="">Pricing</a></div>
+                <div class="menu__item"><a href="">Contact</a></div>
               </div>
-              <div>
-                <li class="menu__item"><a href="">Product</a></li>
-              </div>
-              <div>
-                <li class="menu__item"><a href="">Pricing</a></li>
-              </div>
-              <div>
-                <li class="menu__item"><a href="">Contact</a></li>
-                </di>
-            </ul>
+            </div>
             <div class="buttons">
               <div><input class="button button-search" type="button" value=""></div>
               <div><input class="button button-bag" type="button" value=""></div>
@@ -53,7 +48,7 @@
           </div>
 
         </nav>
-        <div class="main-container">
+        <div class="main-container container-with-blocks">
           <div class="titles">
             <h1>
               <p>Help to reclaim your life and freedom
@@ -129,13 +124,13 @@
             </div>
             <div class="subtitle-container">
               <div class="main-subtitle">
-                Problems trying to resolve the conflict between <br> the two major realms of Classical physics:
+                <div>Problems trying to resolve the conflict between</div> the two major realms of Classical physics:
                 Newtonian
                 mechanics
               </div>
             </div>
           </div>
-          <div class="advice-container">
+          <div class="container-with-blocks advice-container">
             <div class="advice-block">
               <div class="advice-head">
                 <img src="./img/scales_icon.svg" alt="">
@@ -225,7 +220,6 @@
           </div>
         </div>
       </div>
-
       <div class="video-block">
         <div class="container video-main-container">
           <div class="title-container video-title-container">
@@ -249,9 +243,8 @@
           </div>
         </div>
       </div>
-
       <div class="clients-review-block">
-        <div class="container">
+        <div class="container clients-review-block-container">
           <div class="title-container ">
             <div class="main-title">
               What Clients Say
@@ -263,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="client-review-container">
+          <div class="container-with-blocks client-review-container">
             <div class="client-review-block">
               <div class="client-review-block_container">
                 <div class="client-review-block_container-stars">
@@ -350,7 +343,7 @@
               </div>
             </div>
           </div>
-          <div class="attorneys-container">
+          <div class="attorneys-container container-with-blocks">
             <div class="attorneys-card">
               <div class="attorneys-card-photo card_1">
                 <img width="327" src="./img/photo_card_1.png" alt="">
@@ -483,46 +476,45 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="contact-consultation">
-            <div class="request-container">
-              <div class="request-titles-container">
-                <div class="main-title request-title">
-                  Request A Free Consultation
+            <div class="contact-consultation">
+              <div class="request-container">
+                <div class="request-titles-container">
+                  <div class="main-title request-title">
+                    Request A Free Consultation
+                  </div>
+                  <div class="main-text request-subtitle">
+                    the quick fox jumps over the lazy dog
+                  </div>
                 </div>
-                <div class="main-text request-subtitle">
-                  the quick fox jumps over the lazy dog
+                <div class="button-container-contact">
+                  <input type="button" class="form__button contact-button contact-us" value="Contact Us">
                 </div>
-              </div>
-              <div class="button-container-contact">
-                <input type="button" class="form__button contact-button contact-us" value="Contact Us">
               </div>
             </div>
           </div>
+
         </div>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-header-container">
-          <div class="footer-header">
-            <div class="navbar__logo footbar-logo">Litigade</div>
-            <div class="social-media-container">
-              <div class="attorneys-card-info_media social-media__inner">
-                <div class="attorneys-card-info_media_facebook"> <a target="_blank"
-                    href="https://www.facebook.com/"><img src="./img/facebook_colorful_icon.svg" alt=""></a></div>
-                <div class="attorneys-card-info_media_instagram"><a target="_blank"
-                    href="https://www.instagram.com/"><img src="./img/instagram_colorful_icon.svg" alt=""></a></div>
-                <div class="attorneys-card-info_media_twitter"> <a target="_blank" href="https://www.twitter.com/"><img
-                      src="./img/twitter_colorful_icon.svg" alt=""></a></div>
-                <div class="attorneys-card-info_media_youtube"> <a target="_blank" href="https://www.youtube.com/"><img
-                      src="./img/youtube_icon.svg" alt=""></a></div>
-              </div>
+          <div class="navbar__logo footbar-logo">Litigade</div>
+          <div class="social-media-container">
+            <div class="attorneys-card-info_media social-media__inner">
+              <div class="attorneys-card-info_media_facebook"> <a target="_blank" href="https://www.facebook.com/"><img
+                    src="./img/facebook_colorful_icon.svg" alt=""></a></div>
+              <div class="attorneys-card-info_media_instagram"><a target="_blank" href="https://www.instagram.com/"><img
+                    src="./img/instagram_colorful_icon.svg" alt=""></a></div>
+              <div class="attorneys-card-info_media_twitter"> <a target="_blank" href="https://www.twitter.com/"><img
+                    src="./img/twitter_colorful_icon.svg" alt=""></a></div>
+              <div class="attorneys-card-info_media_youtube"> <a target="_blank" href="https://www.youtube.com/"><img
+                    src="./img/youtube_icon.svg" alt=""></a></div>
             </div>
           </div>
         </div>
         <div class="footer-contacts-container">
-          <div class="footer-contacts-container_inner">
+          <div class="footer-contacts-container_inner container-with-blocks">
             <div class="contact-block-footer">
               <div class="advice-head contact-block-title">Company Info</div>
               <div class="contact-block-info-container">
