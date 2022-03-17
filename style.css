@@ -76,6 +76,7 @@ body {
 }
 
 .navbar {
+  padding: 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -717,7 +718,6 @@ body {
 .button-container-contact {
   display: flex;
   width: 236px;
-  height: 58px;
   justify-content: center;
 }
 
@@ -731,6 +731,7 @@ body {
 }
 
 .footer-header-container {
+  padding: 0px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
