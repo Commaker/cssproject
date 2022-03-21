@@ -49,6 +49,7 @@ body {
   font-size: 40px;
   line-height: 125%;
   letter-spacing: 0.2px;
+  text-align: center;
 }
 
 .main-subtitle {
@@ -106,6 +107,23 @@ body {
   width: 373px;
 }
 
+#menu {
+  display: none;
+}
+
+.menu_header label {
+  display: none;
+
+  width: 40px;
+  height: 100%;
+  background: url(./img/stairs_icon.svg) no-repeat center center;
+  cursor: pointer;
+}
+
+input:checked ~ .menu_header_titles {
+  display: none;
+}
+
 .menu__item a {
   display: block;
   color: #737373;
@@ -128,7 +146,6 @@ body {
 
 .menu_header_titles {
   width: 280px;
-  height: 24px;
   display: flex;
   justify-content: space-around;
 }
@@ -173,7 +190,6 @@ body {
 }
 
 .button-search {
-  margin-left: 23px;
   background: url(./img/loupe_icon.svg) no-repeat center center;
 }
 
@@ -569,6 +585,7 @@ body {
 }
 
 .contact-block_background {
+  position: relative;
   margin: 0 auto;
   max-width: 1440px;
   height: 821px;
@@ -579,7 +596,6 @@ body {
 .contact-form-container {
   display: flex;
   max-width: 1050px;
-  padding-bottom: 100px;
 }
 
 .contact-form-container_inner {
@@ -683,17 +699,19 @@ body {
 }
 
 .contact-consultation {
+  position: absolute;
+  bottom: 0px;
   display: flex;
   align-items: center;
   align-content: center;
-  max-width: 1244px;
+  width: 1244px;
   background: #fff;
   min-height: 143px;
 }
 .request-container {
   display: flex;
   justify-content: space-between;
-  width: 1052px;
+  max-width: 1052px;
 }
 
 #request-titles-container {

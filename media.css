@@ -92,8 +92,19 @@
     height: 50px;
   }
 
+  .menu_header label {
+    display: flex;
+  }
+
   .menu_header {
-    display: none;
+    display: block;
+    flex-direction: column;
+  }
+
+  .menu_header_titles {
+    flex-direction: column;
+    height: 100%;
+    background: #f7f7f7;
   }
 
   .button-stairs {
