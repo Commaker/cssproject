@@ -11,7 +11,7 @@
 
   .main-container h1 {
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 100px;
   }
 
@@ -61,6 +61,7 @@
   }
 
   .footer-contacts-container_inner {
+    padding: 10px 10px;
     flex-wrap: wrap;
   }
 
@@ -68,11 +69,75 @@
     margin: 0px;
     padding: 10px 0px;
   }
+
+  .footer-header-container {
+    margin-bottom: 10px;
+  }
 }
 
 @media all and (max-width: 1050px) and (min-width: 650px) {
   .container-with-blocks {
     justify-content: space-around;
     flex-direction: row;
+  }
+}
+
+@media all and (max-width: 650px) and (min-width: 360px) {
+  .button-container-contact {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-us {
+    height: 50px;
+  }
+
+  .menu_header {
+    display: none;
+  }
+
+  .button-stairs {
+    display: inline-block;
+  }
+
+  .button-stairs:checked {
+    background: chocolate;
+  }
+
+  .navbar {
+    background: #f7f7f7;
+  }
+
+  .container-navbar {
+    padding: 0px;
+  }
+
+  .main-container h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+
+  .main-container h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .buttons-main {
+    padding-top: 35px;
+  }
+
+  .rights-text {
+    text-align: center;
+  }
+
+  .contact-form-container_inner {
+  }
+
+  .request-subtitle {
+    padding-bottom: 10px;
   }
 }
