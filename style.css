@@ -113,15 +113,10 @@ body {
 
 .menu_header label {
   display: none;
-
   width: 40px;
-  height: 100%;
+  height: 40px;
   background: url(./img/stairs_icon.svg) no-repeat center center;
   cursor: pointer;
-}
-
-input:checked ~ .menu_header_titles {
-  display: none;
 }
 
 .menu__item a {
@@ -371,12 +366,12 @@ input:checked ~ .menu_header_titles {
 
 .advice-block {
   width: 328px;
-  height: 385px;
   background: #f6e4d7;
   border-radius: 10px;
 }
 
 .advice-head {
+  padding: 25px 0px;
   letter-spacing: 0.1px;
   font-family: Martel;
   font-weight: 700;
@@ -384,7 +379,6 @@ input:checked ~ .menu_header_titles {
   align-items: center;
   justify-content: center;
   width: 328px;
-  height: 132px;
   border-radius: 10px;
 }
 
@@ -424,6 +418,7 @@ input:checked ~ .menu_header_titles {
 }
 
 .video-block {
+  position: relative;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -431,11 +426,12 @@ input:checked ~ .menu_header_titles {
 }
 
 .video-block::after {
-  margin-top: -380px;
+  position: absolute;
+  bottom: 0;
   display: block;
   content: "";
   width: 100%;
-  height: 350px;
+  height: 45%;
   background: rgb(19, 47, 63);
 }
 
@@ -444,8 +440,7 @@ input:checked ~ .menu_header_titles {
   align-items: center;
   justify-content: center;
   max-width: 877px;
-  height: 440px;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
   padding: 0px 10px;
 }
 
@@ -588,12 +583,12 @@ input:checked ~ .menu_header_titles {
   position: relative;
   margin: 0 auto;
   max-width: 1440px;
-  height: 821px;
   background: url(./img/contacts_background.png) no-repeat;
   background-size: cover;
 }
 
 .contact-form-container {
+  padding: 0px 20px;
   display: flex;
   max-width: 1050px;
 }
@@ -602,7 +597,6 @@ input:checked ~ .menu_header_titles {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   max-width: 602px;
 }
 
@@ -625,6 +619,7 @@ input:checked ~ .menu_header_titles {
   letter-spacing: 0.1px;
   color: #252b42;
 }
+
 .title-make-appointment {
   font-family: "Martel";
   font-style: normal;
@@ -635,18 +630,12 @@ input:checked ~ .menu_header_titles {
 }
 
 .contact-form_rows {
-  width: 597px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  max-width: 597px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.contact-form-small {
-  width: 285px;
-}
-
-.contact-form-big {
-  width: 290px;
 }
 
 .contact-message {
@@ -665,8 +654,8 @@ input:checked ~ .menu_header_titles {
 .contact-form-items-container {
   display: flex;
   flex-direction: column;
-  width: 602px;
-  height: 280px;
+  max-width: 602px;
+  max-height: 280px;
   justify-content: space-between;
 }
 .textarea {
@@ -675,12 +664,22 @@ input:checked ~ .menu_header_titles {
   width: 595px;
   height: 140px;
 }
+
 :root {
   --plyr-color-main: #072e44;
+  background-size: cover;
 }
 
 .video-container_main .plyr__control--overlaid svg {
   display: none;
+}
+
+.video-container .video-container_main .plyr--video {
+  z-index: 1;
+}
+
+.video-container .video-container_main .plyr__poster {
+  background-size: cover;
 }
 
 .video-container .video-container_main .plyr__control--overlaid {
@@ -699,19 +698,22 @@ input:checked ~ .menu_header_titles {
 }
 
 .contact-consultation {
-  position: absolute;
+  margin-top: 100px;
+  justify-content: center;
+  right: 0px;
   bottom: 0px;
   display: flex;
   align-items: center;
   align-content: center;
-  width: 1244px;
   background: #fff;
   min-height: 143px;
 }
+
 .request-container {
   display: flex;
   justify-content: space-between;
   max-width: 1052px;
+  width: 100%;
 }
 
 #request-titles-container {
@@ -743,6 +745,7 @@ input:checked ~ .menu_header_titles {
   margin-top: 0px;
   padding: 0px;
 }
+
 .footer {
   background: #252b42;
 }
@@ -784,15 +787,14 @@ input:checked ~ .menu_header_titles {
   display: flex;
   align-items: center;
   max-width: 1050px;
-  height: 310px;
 }
 
 .footer-contacts-container_inner {
+  padding: 55px 0px;
   display: flex;
   justify-content: space-between;
   width: 1041px;
   height: 100%;
-  align-items: center;
 }
 
 .contact-block-footer {
@@ -824,7 +826,6 @@ input:checked ~ .menu_header_titles {
   justify-content: left;
   color: #fff;
   width: 117px;
-  height: 24px;
 }
 
 .p-contact {
@@ -844,8 +845,8 @@ input:checked ~ .menu_header_titles {
 .input-button-main {
   position: absolute;
   width: 117px;
-  height: 58px;
-  right: 0px;
+  height: 57px;
+  right: 36px;
   bottom: 21px;
 
   background: #d0a144;
@@ -874,4 +875,12 @@ input:checked ~ .menu_header_titles {
   line-height: 171%;
   letter-spacing: 0.2px;
   color: #bdbdbd;
+}
+
+.contact-form-small {
+  width: 285px;
+}
+
+.contact-form-big {
+  width: 290px;
 }
